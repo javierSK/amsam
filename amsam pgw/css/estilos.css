@@ -36,15 +36,18 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-    padding-top: 10px;
+ 
 }
-
 
 .logo img{
-    max-width: 50px;
-
+    max-width: 40px;
+    transform: translateY(6px);
 }
 
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .nav-links{
     display: flex;
@@ -163,6 +166,18 @@ nav{
     animation: movimiento 10s infinite linear alternate;
 
 }
+.bann{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #F5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1 ease-in-out;
+    background-image: url('../img/bnos.jpg');
+    animation: movimiento 10s infinite linear alternate;
+
+}
 @keyframes movimiento{
     from{
         background-position: bottom left;
@@ -182,11 +197,13 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .contenido-banner img{
 
-    width: 500px;
+    width: 300px;
+   
 
 }
 .contenido-banner h1{
@@ -335,7 +352,7 @@ content: attr(data-text);
     }
     .containers .card .imgbx img,
     .containers .card:hover .imgbx img{
-        max-width: 100px;
+        max-width: 100%;
     }
     .containers .card .content{
         position: relative;
@@ -364,7 +381,7 @@ footer{
 }
 
 .columna1{
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .columna1 h1{
@@ -378,14 +395,6 @@ footer{
     margin-top: 20px;
 }
 
-.columna2{
-    max-width: 400px;
-}
-
-.columna2 h1{
-    color: #fff;
-    font-size: 22px;
-}
 
 .fila{
     margin-top: 20px;
@@ -407,7 +416,7 @@ footer{
 
 .columna3{
     color: #fff;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .columna3 h1{
@@ -463,7 +472,6 @@ footer{
         max-width: 100%;
     }
 
-    .columna2,
     .columna3{
         margin-top: 40px;
     }
@@ -473,7 +481,7 @@ footer{
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 50px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,13 +511,13 @@ footer{
     margin-top: 30px;
 }
 .contain .contactInfo{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 .contain .contactInfo .box{
     position: relative;
-    padding: 20px 0;
+    padding: 20px 10px;
     display: flex;
     
 }
@@ -531,6 +539,7 @@ footer{
     flex-direction: column;
     font-weight: 300;
 }
+
 .contain .contactInfo .box .text h3{
     font-weight: 500;
     color: #00bcd4;
@@ -538,7 +547,7 @@ footer{
 .contact-form{
     width: 40%;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.58);
+    background: rgba(211, 207, 207, 0.58);
 }
 .contact-form h2{
     font-size: 30px;
@@ -574,7 +583,7 @@ footer{
 .contact-form .inputbx input:valid ~ span,
 .contact-form .inputbx textarea:focus ~ span,
 .contact-form .inputbx textarea:valid ~ span{
-    color: #e91e63;
+    color: #000;
     font-size: 12px;
     transform: translateY(-20px);
    
@@ -610,79 +619,93 @@ footer{
 /*videos*/
 .galeria, .galeri{
     position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
+    min-height: 40vh;
+    padding: 50px ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../img/fonditolindi.jpg);
+    background: rgb(42, 47, 69);
     background-size: cover;
    
 }
-.galeria .content{
+.gal{
+       position: relative;
+    min-height: 40vh;
+    padding: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-size: cover; 
+}
+.gal .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #2a2929;
+}
+.gal img{
+ 
+    max-width: 100%;
+}
+.galeria .conten{
     max-width: 800px;
     text-align: center;
 }
-.galeria .content h2{
+.galeria .conten h2{
     font-size: 36px;
     font-weight: 500;
     color: #fff;
 }
-.galeri .content h2{
+.galeri .conten h2{
     font-size: 36px;
     font-weight: 500;
     color: #fff;
 }
-.galeria .content p{
+.galeria .conten p{
     font-weight: 300;
     color: #fff;
 }
-.contain{
+.contai{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-.contain .contactInfo{
+.contai p{
+    text-align: justify;
+}
+
+
+.contact-for{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.contain .contactInfo .box{
-    position: relative;
-    padding: 20px ;
-    display: flex;
-    
-}
-
-
-.contact-form{
-    width: 40%;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.58);
+    background: rgba(221, 221, 221, 0.72);
 }
-.contact-form h2{
+.contact-for h2{
     font-size: 30px;
     color: #333;
     font-weight: 500;
 }
-
-
+.contact-form p{
+    text-align: justify;
+}
+.content p{
+    text-align: justify;
+}
 
 
 @media(max-width: 991px){
-    .content{
+    .conten{
         padding: 50px;
     }
-    .contain{
+    .contai{
         flex-direction: column;
     }
-    .contain .contactInfo{
-        margin-bottom: 40px;
-    }
-    .contain .contactInfo,.contact-form{
+   
+    .contain ,.contact-for{
         width: 100%;
     }
 }
@@ -728,3 +751,242 @@ footer{
 }
 
 /*videos*/
+/*servicios*/
+.service-section{
+    background: rgb(5, 5, 25);
+    padding: 60px 0;
+}
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+.service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    column-rule-color: #82ccdd;
+    transform: rotate(45deg);
+    margin: 30px;
+    margin-top: 16px;
+    transition:0.3s linear;
+}
+.service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+.service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+}
+.service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.service-desc{
+    font-size: 14px;
+}
+
+@media screen and (max-width:960px){
+    .service-box{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width:768px){
+    .service-box{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    .service-box{
+        max-width: 100%;
+    }
+}
+/*f servicios*/
+/*nosotros*/
+.wrap{
+    width: 100%;
+    background-color: #fff;
+}
+.seccion{
+    width: 90%;
+    display: block;
+    margin:10px auto;    
+}
+.left-section{
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+.contenido{
+    text-align: justify;
+}
+.seccin .imagen-sec{
+    float: right;
+    width: 40%;
+}
+
+.contenido .tit h2{
+    color: #1c1c1c;
+    font-weight: 800;
+    text-align: center;
+}
+.contenido .tit h3{
+    padding-top: 15px;
+    color: #0f0d0d;
+    font-weight: 800;
+}
+
+.contenido p{
+    padding-top: 15px;
+    color: #1e1e1e;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px){
+
+    .imagen-sec{
+        width: 100%;
+         justify-content: center;
+        margin: 50px auto;
+    }
+    .imagen-sec img{
+        width: 100%;
+        
+    }
+}
+
+.div{
+    width: 100%;
+
+}
+.div img{
+    width: 300px;
+   
+
+}
+
+
+/*f nosotros*/
+
+
+.cont-vid img{
+    width: 100%;
+}
+
+
+/*btn pa arriba*/
+
+.gotop{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 15px;
+    height: 15px;
+    z-index: -1;
+}
+
+.gotopbtn{
+    width: 5px;
+    height: 5px;
+    background: #020267;
+    border-radius: 50%;
+     cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -4;
+}
+
+.gotopbtn i{
+    position: absolute;
+    cursor: pointer;
+    font-size: 10px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+
+.showe{
+    z-index: 10; 
+}
+
+.showe .gotopbtn{
+    animation: popup .3s ease-in-out;
+    
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+}
+
+.showe i{
+     transform: translate(-50%, -50%) scale(1);
+}
+
+
+@keyframes popup{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    50%{
+        width: 60px;
+        height: 60px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

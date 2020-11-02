@@ -4,27 +4,30 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/946d6368af.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/estilos.css">
-                <link
+        <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               />
-        <title>Hello, world!</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="icon" href="img/png_Mesa%20de%20trabajo%201.ico">
+        <title>Amsam</title>
     </head>
     <body>
-                <!--navbar -->
+        <!--navbar -->
         <header>
             <nav id="navbar">
                 <div class="logo">
                     <img src="img/WhatsApp%20Image%202020-09-25%20at%207.50.25%20PM.jpeg" alt="">
                     <img src="img/png_Mesa%20de%20trabajo%201.png" alt="">
-                    <span class="w">Amsam</span>
+                    <a href="index.html" class="w">Amsam</a>
                 </div>
                 <ul class="nav-links">  
                     <li><a href="index.html">inicio</a></li>
-                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="proyectos.html">Proyectos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -40,107 +43,89 @@
         <section class="contact">
             <div class="content animate__animated animate__backInDown">
                 <h2>Contactanos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint cumque, dolorem culpa cum eveniet dolorum suscipit itaque debitis. Error vero ex facere. Illo necessitatibus cumque aliquam, voluptate, sequi impedit quaerat?</p>
+                <p>¿Tienes alguna duda?, ¿Alguna petición?, por favor ponte en contacto con nosotros por los medios indicados a continuación, responderemos a la brevedad.</p>
             </div>
             <div class="contain">
                 <div class="contactInfo">
                     <div class="box animate__animated animate__backInLeft">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <h3>Direccion</h3>
-                            <p>921 coso coso coso,<br>coso,coso,<br>54545</p>
-                        </div>
-                    </div>
-                     <div class="box animate__animated animate__backInLeft">
                         <div class="icon"><i class="fas fa-phone-alt"></i></div>
                         <div class="text">
-                            <h3>Telefono</h3>
-                            <p>+569 1223456</p>
+                            <h3>Teléfono</h3>
+                            <p>+56 9 3421 9333</p>
                         </div>
                     </div>
 
-                     <div class="box animate__animated animate__backInLeft">
+                    <div class="box animate__animated animate__backInLeft">
                         <div class="icon"><i class="fas fa-envelope-open"></i></div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>correofalso@gmail.com</p>
+                            <p>contacto@amsam.cl</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form animate__animated animate__backInRight">
-                    <form action="">
-                        <h2>Envianos un mensaje</h2>
+                    <form action="correo.php" method="post" enctype="multipart/form-data">
+                        <h2>Envíanos un mensaje</h2>
                         <div class="inputbx">
-                            <input type="text" required="required">
+                            <input type="text" name="nombre">
                             <span>Nombre completo</span>
                         </div>
                         <div class="inputbx">
-                            <input type="text" required="required">
+                            <input type="text" name="email">
                             <span>Email</span>
                         </div>
                         <div class="inputbx">
-                            <textarea required="required"></textarea>
+                            <textarea name="msg"></textarea>
                             <span>Escribe tu mensaje...</span>
                         </div>
                         <div class="inputbx">
-                            <input type="submit" value="Send">
-                            
+                            <input type="submit" value="Enviar">
+
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+        <div class="gotop">
+            <div class="gotopbtn">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
         <!--fin -->
-          <!--footer -->
-            <footer>
-                <div class="container-footer-all">
+        <!--footer -->
+         <footer>
+        <div class="container-footer-all">
 
 
-                    <div class="contenedor-foo">
-                        <div class="columna1">
-                            <h1>Mas informacion de la compañia</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore similique vero quibusdam. A quis, quaerat magnam natus soluta facere nobis inventore sint culpa? Illum nemo totam saepe cum asperiores labore.</p>
-                        </div>
-
-                        <div class="columna2">
-                            <h1>Redes sociales</h1>
-                            <div class="fila">
-                                <a href="https://www.facebook.com/outlet.paine.94/photos"><img src="img/face.png" alt=""> </a>
-                                <label for="">Siguenos en Facebooka</label>
-                            </div>
-                            <div class="fila">
-                                <a href="https://www.instagram.com/outlet_paine/?hl=es-la">  <img src="img/insta.png" alt="">  </a>
-                                <label for="">Siguenos en instagram</label>
-                            </div>
-                        </div>
-
-                        <div class="columna3">
-                            <h1>Informacion contacto</h1>
-                            <div class="fila2">
-                                <img src="img/casa.png" alt="">
-                                <label for="">Direccion</label>
-                            </div>
-                            <div class="fila2">
-                                <img src="img/fono.png" alt="">
-                                <label for="">telefono</label>
-                            </div>
-                            <div class="fila2">
-                                <img src="img/correo.png" alt="">
-                                <label for="">Correo</label>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="contenedor-foo">
+                <div class="columna1">
+                    <h1>Más información de la compañía</h1>
+                    <p>Somos un grupo de personas emergentes, que desde hace un tiempo empezó a caminar como empresa, queremos dar un gran enfoque a los problemas de nuestros clientes y poder asesorar, para que sus proyectos lleguen a un buen término, porque sabemos lo difícil que es proyectar las ideas.</p>
                 </div>
-                <div class="footer">
-                    <div class="contenedor-web">
-                        <div class="copyright">
-                            Copyright © Página oficial AMSAM | <a href="">JsK Web</a> 
-                        </div>
+                <div class="columna3">
+                    <h1>Información contacto</h1>
+                    <div class="fila2">
+                        <img src="img/fono.png" alt="">
+                        <label for="">+56 9 3421 9333</label>
+                    </div>
+                    <div class="fila2">
+                        <img src="img/correo.png" alt="">
+                        <label for="">contacto@amsam.cl</label>
                     </div>
                 </div>
+            </div>
 
-            </footer>
+        </div>
+        <div class="footer">
+            <div class="contenedor-web">
+                <div class="copyright">
+                    Copyright © Página oficial AMSAM | <a href="">JsK Web</a> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+        <!--f foooter -->
         <script src="js/nav.js"></script>
     </body>
 </html>

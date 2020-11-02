@@ -24,3 +24,20 @@
 
 }
 navSlide();
+
+
+window.onscroll = function(){
+    if(document.documentElement.scrollTop > 100){
+        document.querySelector('.gotop').classList.add('showe');
+    }else{
+        document.querySelector('.gotop').classList.add('showe');
+    }
+}
+
+
+document.querySelector('.gotop').addEventListener('click', ()=>{
+   window.scrollTo({
+       top: 0,
+       behavior: 'smooth'
+   }) ;
+});
